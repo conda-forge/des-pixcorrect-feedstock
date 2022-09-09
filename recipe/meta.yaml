@@ -1,5 +1,5 @@
 {% set name = "des-pixcorrect" %}
-{% set version = "3.0.8" %}
+{% set version = "3.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/DarkEnergySurvey/pixcorrect/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 5fbee8a8ee7e49ea1d37be2697919b533b8155a7398a6305feb9bc33b82130d0
+  sha256: 4038bf156169e76e5452a47343fd7a107f4457788726f1986e2e266836135813
   patches:
     - mask_sat.patch
 
 build:
-  skip: True  # [win]
-  number: 1
+  skip: true  # [win]
+  number: 0
 
 requirements:
   build:
@@ -48,7 +48,7 @@ test:
 
 about:
   home: https://github.com/DarkEnergySurvey/pixcorrect
-  summary: 'DES Image software'
+  summary: DES Image software
   license: NCSA
   license_file: LICENSE.md
 
