@@ -1,5 +1,5 @@
 {% set name = "des-pixcorrect" %}
-{% set version = "3.1.4" %}
+{% set version = "3.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/DarkEnergySurvey/pixcorrect/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 4038bf156169e76e5452a47343fd7a107f4457788726f1986e2e266836135813
+  sha256: 869904e84c09078a6edaf4be009faec8ccffcd864c68503f058b55d621f5abbd
   patches:
     - mask_sat.patch
 
