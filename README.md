@@ -1,11 +1,11 @@
-About des-pixcorrect
-====================
+About des-pixcorrect-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/des-pixcorrect-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/DarkEnergySurvey/pixcorrect
 
 Package license: NCSA
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/des-pixcorrect-feedstock/blob/main/LICENSE.txt)
 
 Summary: DES Image software
 
