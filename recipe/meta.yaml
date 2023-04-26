@@ -28,6 +28,8 @@ requirements:
     - numpy
     - scipy
     - fitsio
+    - pandas
+    - astropy
     - des-despyastro
     - des-despymisc
     - des-despyfits
