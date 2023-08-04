@@ -1,5 +1,5 @@
 export IMSUPPORT_DIR=${PREFIX}/imsupport
-${PYTHON} -m pip install . -vv
+${PYTHON} -m pip install . -vvv
 
 # non-standard layout for the install
 mkdir -p ${PREFIX}/pixcorrect/include
@@ -7,7 +7,8 @@ cp include/libfixcol.h ${PREFIX}/pixcorrect/include/libfixcol.h
 
 mkdir -p ${PREFIX}/pixcorrect/lib
 for nm in "biascorrect" "bpm" "fixcol" "flatcorrect" "masksatr" "fpnumber"; do
-  ls -lah ${SP_DIR}/${nm}.*
+  ls -lah ${SP_DIR}/*.so
+  ls -lah ${PREFIX}/pixcorrect/lib/*
   mv ${SP_DIR}/${nm}.*.so ${PREFIX}/pixcorrect/lib/lib${nm}${SHLIB_EXT}
 done
 
