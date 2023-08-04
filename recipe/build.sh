@@ -1,5 +1,3 @@
-echo ${PY_VER}
-
 export IMSUPPORT_DIR=${PREFIX}/imsupport
 ${PYTHON} -m pip install . -vvv
 
@@ -9,9 +7,8 @@ cp include/libfixcol.h ${PREFIX}/pixcorrect/include/libfixcol.h
 
 mkdir -p ${PREFIX}/pixcorrect/lib
 for nm in "biascorrect" "bpm" "fixcol" "flatcorrect" "masksatr" "fpnumber"; do
-  ls -lah ${SP_DIR}/*.so
-  mv ${SP_DIR}/${nm}.*.so ${PREFIX}/pixcorrect/lib/lib${nm}${SHLIB_EXT}
-  ls -lah ${PREFIX}/pixcorrect/lib
+  ls -lah ${PREFIX}/lib/python${PY_VER}/site-packages/*.so
+  mv ${PREFIX}/lib/python${PY_VER}/site-packages/${nm}.*.so ${PREFIX}/pixcorrect/lib/lib${nm}${SHLIB_EXT}
 done
 
 # copy the conda ones
