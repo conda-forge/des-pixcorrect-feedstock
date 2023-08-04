@@ -8,8 +8,8 @@ cp include/libfixcol.h ${PREFIX}/pixcorrect/include/libfixcol.h
 mkdir -p ${PREFIX}/pixcorrect/lib
 for nm in "biascorrect" "bpm" "fixcol" "flatcorrect" "masksatr" "fpnumber"; do
   ls -lah ${SP_DIR}/*.so
-  ls -lah ${PREFIX}/pixcorrect/lib/*
   mv ${SP_DIR}/${nm}.*.so ${PREFIX}/pixcorrect/lib/lib${nm}${SHLIB_EXT}
+  ls -lah ${PREFIX}/pixcorrect/lib
 done
 
 # copy the conda ones
