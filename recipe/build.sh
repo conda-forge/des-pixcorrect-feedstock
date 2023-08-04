@@ -1,3 +1,5 @@
+echo ${PY_VER}
+
 export IMSUPPORT_DIR=${PREFIX}/imsupport
 ${PYTHON} -m pip install . -vvv
 
